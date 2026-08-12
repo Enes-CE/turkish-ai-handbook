@@ -25,15 +25,44 @@ Her sayfa üç kutudan birine girer. Kutu, o sayfanın ne sıklıkla kontrol edi
 **Kural:** Aynı dosyada kavram ile arayüz anlatımını karıştırma. Karıştırırsan, GitHub bir butonun
 yerini değiştirdiğinde hiç eskimeyen kavram anlatımını da elden geçirmek zorunda kalırsın.
 
-## 2. Ekran görüntüsü politikası
+## 2. Görsel politikası
 
-Ekran görüntüsü en hızlı eskiyen ve güncellemesi en pahalı içerik türü.
+Görsel eklerken üç katmanlı bir öncelik sırası izlenir. Sıradaki adım, bir öncekinin
+gerçekten yetersiz kaldığı yerde devreye girer — sıra atlanmaz.
 
-- Bir şey **metinle anlatılabiliyorsa ekran görüntüsü koyma.** ("Sağ üstteki *Settings* → *Developer settings*" yeterli.)
-- Koyacaksan hepsi `gorseller/` altında dursun ki bir UI değişiminde tek klasöre bakıp bitirebil.
-- Dosya adı içeriği anlatsın: `gorseller/github-pr-acma-2026-08.png` — tarihi adına yaz, ne kadar
+**Öncelik 1 — Metin diyagram.** Kod bloğu içinde ASCII/kutu şema. Kavram anlatımı, veri
+akışı, durum geçişleri, karşılaştırma için **varsayılan tercih budur**. Hiç eskimez,
+aranabilir, diff'i okunur, tema bağımsız.
+
+```
+[Çalışma dizini] → git add → [Hazırlanmış alan] → git commit → [Depo geçmişi]
+```
+
+**Öncelik 2 — Mermaid diyagram.** Bir `` ```mermaid `` kod bloğu; GitHub bunu otomatik
+render eder. Akış şeması, karar ağacı, dallanma/birleşme, sıralı süreç için. Kod olduğu
+için güncellemesi kolay.
+
+```mermaid
+flowchart LR
+    calisma[Calisma dizini] --> add[git add]
+    add --> hazir[Hazirlanmis alan]
+    hazir --> commit[git commit] --> gecmis[Depo gecmisi]
+```
+
+> Mermaid etiketlerinde Türkçe karakter serbest, ama **düğüm ID'leri ASCII olmalı**
+> (`calisma[...]` gibi) — Türkçe karakterli ID bazı render motorlarında sessizce bozulur.
+
+**Öncelik 3 — Ekran görüntüsü (son çare).** Sadece bir arayüzde tıklanacak yeri metinle
+tarif etmek gerçekten yetersizse kullanılır.
+
+- `gorseller/` altında dursun ki bir UI değişiminde tek klasöre bakıp bitirebil.
+- Dosya adı içeriği ve tarihi anlatsın: `gorseller/github-pr-acma-2026-08.png` — ne kadar
   eskidiğini açmadan gör.
-- Terminal çıktısı için **ekran görüntüsü değil, kod bloğu** kullan. Aranabilir, kopyalanabilir, güncellemesi 5 saniye.
+- Terminal çıktısı için **asla** ekran görüntüsü kullanılmaz — kod bloğu kullanılır.
+  Aranabilir, kopyalanabilir, güncellemesi 5 saniye.
+
+**Görsel zorunlu değil.** Her sayfada en az bir görsel olması gerekmiyor; zorlama görsel,
+olmayandan kötüdür. Ama bir kavram uzamsal, sıralı veya karşılaştırmalıysa görsel eklenmelidir.
 
 ## 3. Her sayfanın künyesi zorunlu
 

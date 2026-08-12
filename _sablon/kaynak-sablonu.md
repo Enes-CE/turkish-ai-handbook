@@ -37,6 +37,13 @@ Beklenen çıktı:
 
 ...
 
+## Görsel (gerekiyorsa)
+
+[Kavram uzamsal, sıralı veya karşılaştırmalıysa buraya ekle — zorunlu değil, bkz.
+[Görsel politikası](../BAKIM.md#2-görsel-politikası). Sıra: önce metin diyagram (kod
+bloğu), yetmiyorsa mermaid, o da yetmiyorsa son çare ekran görüntüsü (`gorseller/`
+altında, adında tarihle).]
+
 ## Sık yapılan hatalar
 
 | Hata | Sebebi | Çözüm |
