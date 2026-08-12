@@ -11,11 +11,11 @@ günlük kullanıma uzanan bölüm. Hiç terminal açmamış biri için de düş
 
 Hiç terminal kullanmamış biri için. Sırayla okunmalı.
 
-- [ ] [01 — Terminal nedir, neden gerekli](00-temeller/01-terminal-nedir.md)
-- [ ] [02 — Dosya sistemi ve yol kavramı](00-temeller/02-dosya-sistemi-ve-yol.md)
-- [ ] [03 — Dosya ve klasör işlemleri](00-temeller/03-dosya-klasor-islemleri.md)
-- [ ] [04 — Dosya içeriğini görmek](00-temeller/04-dosya-icerigi-goruntuleme.md)
-- [ ] [05 — Komut yapısı ve yardım okuma](00-temeller/05-komut-yapisi-ve-yardim.md)
+- [x] [01 — Terminal nedir, neden gerekli](00-temeller/01-terminal-nedir.md)
+- [x] [02 — Dosya sistemi ve yol kavramı](00-temeller/02-dosya-sistemi-ve-yol.md)
+- [x] [03 — Dosya ve klasör işlemleri](00-temeller/03-dosya-klasor-islemleri.md)
+- [x] [04 — Dosya içeriğini görmek](00-temeller/04-dosya-icerigi-goruntuleme.md)
+- [x] [05 — Komut yapısı ve yardım okuma](00-temeller/05-komut-yapisi-ve-yardim.md)
 
 ## 01 — Günlük kullanım `orta`
 
