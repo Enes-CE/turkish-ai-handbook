@@ -5,10 +5,12 @@ Python da öğrensen derin öğrenme de çalışsan, bir noktada buradaki araçl
 
 | Konu | Kapsam | Durum |
 |---|---|---|
+| [Terminal](terminal/) | Dosya gezinme, yol kavramı, temel komutlar | ⚪ Planlandı |
+| [Python Ortamları](python-ortamlari/) | Kurulum, sanal ortam, bağımlılık | ⚪ Planlandı |
+| [VS Code](vscode/) | Editörü verimli kullanmak | ⚪ Planlandı |
 | [Git & GitHub](git-github/) | Sürüm kontrolü, işbirliği, portföy | 🟡 Temeller hazır |
-| Terminal / komut satırı | Dosya gezinme, yol kavramı, temel komutlar | ⚪ Planlandı |
-| Sanal ortamlar | venv, conda, bağımlılık yönetimi | ⚪ Planlandı |
-| Google Colab | Not defteri, GPU, dosya yükleme, oturum sınırları | ⚪ Planlandı |
-| VS Code | Kurulum, eklentiler, yorumlayıcı seçimi | ⚪ Planlandı |
+| [Notebook ve Colab](notebook-ve-colab/) | Jupyter, Colab, GPU | ⚪ Planlandı |
+| [Yapay Zekâ Asistanları](yapay-zeka-asistanlari/) | LLM ve ajanları doğru kullanma | ⚪ Planlandı |
+| [Platformlar](platformlar/) | GPU, Kaggle, Hugging Face | ⚪ Planlandı |
 
 ← [Ana sayfa](../README.md)
