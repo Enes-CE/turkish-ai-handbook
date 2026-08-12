@@ -1,0 +1,17 @@
+name: Ölü link kontrolü
+
+on:
+  schedule:
+    - cron: '0 6 1 * *'   # her ayın 1'inde
+  workflow_dispatch:
+
+jobs:
+  linkler:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Linkleri tara
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress --exclude-path './_sablon' './**/*.md'
+          fail: true

@@ -1,0 +1,4 @@
+# Her PR varsayılan olarak depo sahibine incelemeye düşer.
+# Bölüm sorumluları arttıkça buraya satır eklenir:
+#   /01-python/   @kullanici1
+*       @Enes-CE
