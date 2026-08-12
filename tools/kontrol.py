@@ -14,6 +14,12 @@ import re
 import sys
 import pathlib
 
+# Windows konsolunda varsayılan kod sayfası (örn. cp1254) ✓ gibi karakterleri
+# yazdıramayıp UnicodeEncodeError fırlatabiliyor. reconfigure Python 3.7+'ta var;
+# yoksa (3.6 ve altı) sessizce atla, stdout eski davranışıyla çalışmaya devam etsin.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+
 KOK = pathlib.Path(__file__).resolve().parent.parent
 
 # Denetim dışı bırakılanlar
