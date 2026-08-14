@@ -1,0 +1,79 @@
+<svg width="100%" viewBox="0 0 680 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="baslik aciklama">
+<title id="baslik">Sanal ortam olmadan ve sanal ortamla paket kurulumu</title>
+<desc id="aciklama">Sistem Python'unda iki projenin aynı kütüphanenin farklı sürümlerini isteyince çakışma yaşandığını, sanal ortamlarda ise her projenin kendi izole kurulumuna sahip olduğunu gösteren şema.</desc>
+<style>
+  .baslik { font: 500 15px system-ui, sans-serif; fill: #24292f; }
+  .etiket { font: 500 13px system-ui, sans-serif; fill: #24292f; }
+  .kucuk  { font: 400 12px system-ui, sans-serif; fill: #57606a; }
+  .kod    { font: 400 12px ui-monospace, monospace; fill: #24292f; }
+  .kotu   { fill: #cf222e; }
+  .iyi    { fill: #1a7f37; }
+  .kutu   { fill: #ffffff; stroke: #d0d7de; stroke-width: 1; }
+  .kap    { fill: #f6f8fa; stroke: #d0d7de; stroke-width: 1; }
+  .ok     { stroke: #57606a; stroke-width: 1.5; fill: none; }
+  @media (prefers-color-scheme: dark) {
+    .baslik, .etiket, .kod { fill: #e6edf3; }
+    .kucuk { fill: #9198a1; }
+    .kotu { fill: #ff7b72; }
+    .iyi { fill: #3fb950; }
+    .kutu { fill: #0d1117; stroke: #30363d; }
+    .kap { fill: #161b22; stroke: #30363d; }
+    .ok { stroke: #9198a1; }
+  }
+</style>
+
+<text x="20" y="24" class="baslik">Sanal ortam olmadan</text>
+
+<rect x="20" y="40" width="150" height="58" rx="6" class="kutu"/>
+<text x="95" y="63" text-anchor="middle" class="etiket">Proje A</text>
+<text x="95" y="82" text-anchor="middle" class="kod">pandas 2.2</text>
+
+<rect x="20" y="112" width="150" height="58" rx="6" class="kutu"/>
+<text x="95" y="135" text-anchor="middle" class="etiket">Proje B</text>
+<text x="95" y="154" text-anchor="middle" class="kod">pandas 1.5</text>
+
+<path d="M 170 69 L 215 69 L 215 105 L 258 105" class="ok"/>
+<path d="M 170 141 L 215 141 L 215 105 L 258 105" class="ok"/>
+<path d="M 252 100 L 260 105 L 252 110" class="ok"/>
+
+<rect x="264" y="60" width="180" height="90" rx="6" class="kap"/>
+<text x="354" y="84" text-anchor="middle" class="etiket">Sistem Python</text>
+<text x="354" y="105" text-anchor="middle" class="kod">site-packages/</text>
+<text x="354" y="126" text-anchor="middle" class="kod kotu">pandas 1.5</text>
+<text x="354" y="142" text-anchor="middle" class="kucuk">tek kopya durabilir</text>
+
+<text x="466" y="98" class="kotu etiket">Çakışma</text>
+<text x="466" y="118" class="kucuk">Son kurulan,</text>
+<text x="466" y="134" class="kucuk">öncekinin üzerine yazar.</text>
+<text x="466" y="150" class="kucuk">Proje A artık çalışmaz.</text>
+
+<line x1="20" y1="196" x2="660" y2="196" stroke="#d0d7de" stroke-width="1"/>
+
+<text x="20" y="230" class="baslik">Sanal ortamla</text>
+
+<rect x="20" y="246" width="150" height="58" rx="6" class="kutu"/>
+<text x="95" y="269" text-anchor="middle" class="etiket">Proje A</text>
+<text x="95" y="288" text-anchor="middle" class="kod">pandas 2.2</text>
+
+<rect x="20" y="322" width="150" height="58" rx="6" class="kutu"/>
+<text x="95" y="345" text-anchor="middle" class="etiket">Proje B</text>
+<text x="95" y="364" text-anchor="middle" class="kod">pandas 1.5</text>
+
+<path d="M 170 275 L 258 275" class="ok"/>
+<path d="M 252 270 L 260 275 L 252 280" class="ok"/>
+<path d="M 170 351 L 258 351" class="ok"/>
+<path d="M 252 346 L 260 351 L 252 356" class="ok"/>
+
+<rect x="264" y="246" width="200" height="58" rx="6" class="kap"/>
+<text x="364" y="269" text-anchor="middle" class="etiket">venv-a/</text>
+<text x="364" y="288" text-anchor="middle" class="kod iyi">pandas 2.2</text>
+
+<rect x="264" y="322" width="200" height="58" rx="6" class="kap"/>
+<text x="364" y="345" text-anchor="middle" class="etiket">venv-b/</text>
+<text x="364" y="364" text-anchor="middle" class="kod iyi">pandas 1.5</text>
+
+<text x="486" y="296" class="iyi etiket">İzole</text>
+<text x="486" y="316" class="kucuk">Her proje kendi</text>
+<text x="486" y="332" class="kucuk">kurulumuna sahip.</text>
+<text x="486" y="348" class="kucuk">Birbirini etkilemez.</text>
+</svg>
