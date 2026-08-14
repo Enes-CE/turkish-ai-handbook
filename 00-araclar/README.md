@@ -5,7 +5,7 @@ Python da öğrensen derin öğrenme de çalışsan, bir noktada buradaki araçl
 
 | Konu | Kapsam | Durum |
 |---|---|---|
-| [Terminal](terminal/) | Dosya gezinme, yol kavramı, temel komutlar | 🟡 7/10 yazıldı |
+| [Terminal](terminal/) | Dosya gezinme, yol kavramı, temel komutlar | 🟡 8/10 yazıldı |
 | [Python Ortamları](python-ortamlari/) | Kurulum, sanal ortam, bağımlılık | ⚪ Planlandı |
 | [VS Code](vscode/) | Editörü verimli kullanmak | ⚪ Planlandı |
 | [Git & GitHub](git-github/) | Sürüm kontrolü, işbirliği, portföy | 🟡 Temeller hazır |

@@ -23,7 +23,7 @@ Terminali düzenli kullanmaya başlayan biri için.
 
 - [x] [01 — Arama ve filtreleme](01-gunluk-kullanim/01-arama-ve-filtreleme.md)
 - [x] [02 — Çıktıyı dosyaya yazmak](01-gunluk-kullanim/02-cikti-yonlendirme.md)
-- [ ] [03 — Ortam değişkenleri ve PATH](01-gunluk-kullanim/03-ortam-degiskenleri-ve-path.md)
+- [x] [03 — Ortam değişkenleri ve PATH](01-gunluk-kullanim/03-ortam-degiskenleri-ve-path.md)
 - [ ] [04 — Windows'ta terminal seçenekleri](01-gunluk-kullanim/04-windows-terminal-secenekleri.md)
 
 ## 02 — İleri `ileri`
