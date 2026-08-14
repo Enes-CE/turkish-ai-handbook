@@ -28,7 +28,7 @@ Terminali düzenli kullanmaya başlayan biri için.
 
 ## 02 — İleri `ileri`
 
-- [ ] [01 — SSH ile uzak makineye bağlanmak](02-ileri/01-ssh-ile-uzak-baglanti.md)
+- [x] [01 — SSH ile uzak makineye bağlanmak](02-ileri/01-ssh-ile-uzak-baglanti.md)
 
 > `[x]` hazır, `[ ]` sırada.
 
