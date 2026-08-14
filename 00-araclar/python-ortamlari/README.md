@@ -11,7 +11,7 @@ kurup projeler arasında çakışma yaşamadan çalışmak isteyen biri için.
 
 Hiç Python kurmamış biri için. Sırayla okunmalı.
 
-- [ ] [01 — Python kurulumu](00-temeller/01-python-kurulumu.md)
+- [x] [01 — Python kurulumu](00-temeller/01-python-kurulumu.md)
 - [ ] [02 — pip ile paket kurmak](00-temeller/02-pip-ile-paket-kurmak.md)
 - [ ] [03 — Sanal ortam neden gerekli](00-temeller/03-sanal-ortam-nedir.md)
 - [ ] [04 — venv ile ortam oluşturma](00-temeller/04-venv-kullanimi.md)
