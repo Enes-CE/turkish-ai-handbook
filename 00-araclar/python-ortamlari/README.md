@@ -14,7 +14,7 @@ Hiç Python kurmamış biri için. Sırayla okunmalı.
 - [x] [01 — Python kurulumu](00-temeller/01-python-kurulumu.md)
 - [x] [02 — pip ile paket kurmak](00-temeller/02-pip-ile-paket-kurmak.md)
 - [x] [03 — Sanal ortam neden gerekli](00-temeller/03-sanal-ortam-nedir.md)
-- [ ] [04 — venv ile ortam oluşturma](00-temeller/04-venv-kullanimi.md)
+- [x] [04 — venv ile ortam oluşturma](00-temeller/04-venv-kullanimi.md)
 
 ## 01 — Günlük kullanım `orta`
 
