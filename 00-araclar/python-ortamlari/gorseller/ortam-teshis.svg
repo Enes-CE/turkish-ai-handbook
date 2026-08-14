@@ -1,0 +1,88 @@
+<svg width="100%" viewBox="0 0 680 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="baslik aciklama">
+<title id="baslik">ModuleNotFoundError teşhis akışı</title>
+<desc id="aciklama">Paket kurulu olmasına rağmen import edilemediğinde, sanal ortamın aktif olup olmadığından başlayarak pip ve python eşleşmesine kadar giden adım adım teşhis akışı.</desc>
+<style>
+  .etiket { font: 500 13px system-ui, sans-serif; fill: #24292f; }
+  .kucuk  { font: 400 12px system-ui, sans-serif; fill: #57606a; }
+  .kod    { font: 400 12px ui-monospace, monospace; fill: #24292f; }
+  .cozum  { font: 500 12px system-ui, sans-serif; fill: #1a7f37; }
+  .kutu   { fill: #ffffff; stroke: #d0d7de; stroke-width: 1; }
+  .soru   { fill: #f6f8fa; stroke: #d0d7de; stroke-width: 1; }
+  .yesil  { fill: #ffffff; stroke: #1a7f37; stroke-width: 1.2; }
+  .ok     { stroke: #57606a; stroke-width: 1.4; fill: none; }
+  @media (prefers-color-scheme: dark) {
+    .etiket, .kod { fill: #e6edf3; }
+    .kucuk { fill: #9198a1; }
+    .cozum { fill: #3fb950; }
+    .kutu { fill: #0d1117; stroke: #30363d; }
+    .soru { fill: #161b22; stroke: #30363d; }
+    .yesil { fill: #0d1117; stroke: #3fb950; }
+    .ok { stroke: #9198a1; }
+  }
+</style>
+
+<rect x="180" y="16" width="300" height="40" rx="6" class="kutu"/>
+<text x="330" y="41" text-anchor="middle" class="kod">ModuleNotFoundError</text>
+
+<path d="M 330 56 L 330 84" class="ok"/>
+<path d="M 325 78 L 330 86 L 335 78" class="ok"/>
+
+<rect x="150" y="86" width="360" height="46" rx="6" class="soru"/>
+<text x="330" y="105" text-anchor="middle" class="etiket">1. Ortam aktif mi?</text>
+<text x="330" y="123" text-anchor="middle" class="kod">which python</text>
+
+<path d="M 150 109 L 96 109 L 96 145" class="ok"/>
+<path d="M 91 139 L 96 147 L 101 139" class="ok"/>
+<text x="112" y="105" class="kucuk">hayır</text>
+
+<rect x="16" y="147" width="160" height="44" rx="6" class="yesil"/>
+<text x="96" y="165" text-anchor="middle" class="cozum">Aktifleştir</text>
+<text x="96" y="182" text-anchor="middle" class="kucuk">sonra tekrar dene</text>
+
+<path d="M 330 132 L 330 160" class="ok"/>
+<path d="M 325 154 L 330 162 L 335 154" class="ok"/>
+<text x="342" y="152" class="kucuk">evet</text>
+
+<rect x="150" y="162" width="360" height="46" rx="6" class="soru"/>
+<text x="330" y="181" text-anchor="middle" class="etiket">2. pip ve python aynı yerde mi?</text>
+<text x="330" y="199" text-anchor="middle" class="kod">which python · which pip</text>
+
+<path d="M 510 185 L 570 185 L 570 221" class="ok"/>
+<path d="M 565 215 L 570 223 L 575 215" class="ok"/>
+<text x="516" y="181" class="kucuk">hayır</text>
+
+<rect x="490" y="223" width="170" height="44" rx="6" class="yesil"/>
+<text x="575" y="241" text-anchor="middle" class="cozum">python -m pip</text>
+<text x="575" y="258" text-anchor="middle" class="kucuk">ile kur</text>
+
+<path d="M 330 208 L 330 236" class="ok"/>
+<path d="M 325 230 L 330 238 L 335 230" class="ok"/>
+<text x="342" y="228" class="kucuk">evet</text>
+
+<rect x="150" y="238" width="360" height="46" rx="6" class="soru"/>
+<text x="330" y="257" text-anchor="middle" class="etiket">3. Paket gerçekten kurulu mu?</text>
+<text x="330" y="275" text-anchor="middle" class="kod">pip show paket-adi</text>
+
+<path d="M 150 261 L 96 261 L 96 297" class="ok"/>
+<path d="M 91 291 L 96 299 L 101 291" class="ok"/>
+<text x="112" y="257" class="kucuk">hayır</text>
+
+<rect x="16" y="299" width="160" height="44" rx="6" class="yesil"/>
+<text x="96" y="317" text-anchor="middle" class="cozum">Kur</text>
+<text x="96" y="334" text-anchor="middle" class="kucuk">adı doğru yazıldı mı?</text>
+
+<path d="M 330 284 L 330 312" class="ok"/>
+<path d="M 325 306 L 330 314 L 335 306" class="ok"/>
+<text x="342" y="304" class="kucuk">evet</text>
+
+<rect x="150" y="314" width="360" height="46" rx="6" class="soru"/>
+<text x="330" y="333" text-anchor="middle" class="etiket">4. Import adı paket adıyla aynı mı?</text>
+<text x="330" y="351" text-anchor="middle" class="kucuk">pip install pillow → import PIL</text>
+
+<path d="M 330 360 L 330 388" class="ok"/>
+<path d="M 325 382 L 330 390 L 335 382" class="ok"/>
+
+<rect x="180" y="390" width="300" height="44" rx="6" class="yesil"/>
+<text x="330" y="408" text-anchor="middle" class="cozum">Ortamı silip yeniden kur</text>
+<text x="330" y="425" text-anchor="middle" class="kucuk">requirements.txt varsa birkaç saniye sürer</text>
+</svg>
