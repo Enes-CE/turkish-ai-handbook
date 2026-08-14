@@ -12,7 +12,7 @@ ve günlük kullanımda işini kolaylaştıracak kısayollara uzanan bölüm.
 Hiç VS Code kurmamış biri için. Sırayla okunmalı.
 
 - [x] [01 — Kurulum ve arayüz](00-temeller/01-kurulum-ve-arayuz.md)
-- [ ] [02 — Python eklentisi ve yorumlayıcı seçimi](00-temeller/02-python-eklentisi-ve-yorumlayici.md)
+- [x] [02 — Python eklentisi ve yorumlayıcı seçimi](00-temeller/02-python-eklentisi-ve-yorumlayici.md)
 - [ ] [03 — Entegre terminal ve Git arayüzü](00-temeller/03-terminal-ve-git-arayuzu.md)
 
 ## 01 — Günlük kullanım `orta`
