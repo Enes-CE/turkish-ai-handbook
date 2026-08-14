@@ -4,7 +4,9 @@ Konu bazlı yazım durumu raporu.
 
 Her konu klasörünü (README.md + HATA-INDEKSI.md ikilisini birlikte barındıran klasörler)
 tarar, içindeki sayfaların iskelet mi yoksa yazılmış mı olduğunu tespit eder ve konunun
-README'sindeki [x]/[ ] işaretleriyle karşılaştırır.
+README'sindeki [x]/[ ] işaretleriyle karşılaştırır. Ayrıca depodaki üst düzey README'lerde
+("00-araclar/README.md" gibi) bir konuya bağlantı veren ve "N/M yazıldı" biçiminde durum
+yazan satırları, o konu için hesaplanan gerçek sayılarla karşılaştırır.
 
 Sadece rapor basar, hiçbir dosyayı değiştirmez.
 
@@ -28,6 +30,8 @@ HARIC_KLASOR = {"_sablon", ".github", ".git", "tools", "notebooks", "gorseller"}
 ISKELET_IZI = "Bu sayfa henüz yazılmadı"
 
 CHECKLIST_KALIBI = re.compile(r"^- \[([ xX])\] \[.*?\]\(([^)]+)\)", re.MULTILINE)
+DURUM_SAYI_KALIBI = re.compile(r"(\d+)\s*/\s*(\d+)\s*yazıldı")
+LINK_KALIBI = re.compile(r"\[.*?\]\(([^)]+)\)")
 
 
 def haric_mi(yol: pathlib.Path) -> bool:
@@ -81,6 +85,42 @@ def readme_tutarliligini_kontrol_et(klasor: pathlib.Path):
     return uyarilar
 
 
+def index_readmeleri_bul():
+    return [p for p in sorted(KOK.rglob("README.md")) if not haric_mi(p)]
+
+
+def ust_duzey_durumlarini_kontrol_et(konu_haritasi):
+    """konu_haritasi: {konu_klasor (çözümlenmiş yol): (yazilan, toplam)}"""
+    uyarilar = []
+    for readme in index_readmeleri_bul():
+        metin = readme.read_text(encoding="utf-8")
+        for satir in metin.splitlines():
+            satir = satir.strip()
+            if not satir.startswith("|"):
+                continue
+            durum_esleme = DURUM_SAYI_KALIBI.search(satir)
+            if not durum_esleme:
+                continue
+            link_esleme = LINK_KALIBI.search(satir)
+            if not link_esleme:
+                continue
+            hedef = link_esleme.group(1).split("#")[0].strip()
+            if not hedef or hedef.startswith(("http://", "https://")):
+                continue
+            konu_yolu = (readme.parent / hedef).resolve()
+            if konu_yolu not in konu_haritasi:
+                continue
+            beyan_yazilan, beyan_toplam = (int(x) for x in durum_esleme.groups())
+            gercek_yazilan, gercek_toplam = konu_haritasi[konu_yolu]
+            if (beyan_yazilan, beyan_toplam) != (gercek_yazilan, gercek_toplam):
+                goreli = readme.relative_to(KOK).as_posix()
+                uyarilar.append(
+                    f"{goreli}: {hedef} için \"{beyan_yazilan}/{beyan_toplam} yazıldı\" "
+                    f"yazıyor, gerçek durum {gercek_yazilan}/{gercek_toplam}"
+                )
+    return uyarilar
+
+
 def main():
     konular = konu_klasorlerini_bul()
     if not konular:
@@ -89,6 +129,7 @@ def main():
 
     toplam_yazilan = 0
     toplam_sayfa = 0
+    konu_haritasi = {}
 
     for klasor in konular:
         ad = klasor.relative_to(KOK).as_posix()
@@ -97,6 +138,7 @@ def main():
         yazilan = sum(1 for p in sayfalar if sayfa_yazilmis_mi(p))
         toplam_yazilan += yazilan
         toplam_sayfa += toplam
+        konu_haritasi[klasor] = (yazilan, toplam)
 
         print(f"\n{ad}")
         print(f"  Yazılan: {yazilan}/{toplam}")
@@ -109,6 +151,12 @@ def main():
             print("  ✓ README işaretleri tutarlı")
 
     print(f"\nToplam: {toplam_yazilan}/{toplam_sayfa} sayfa yazıldı")
+
+    ust_duzey_uyarilari = ust_duzey_durumlarini_kontrol_et(konu_haritasi)
+    if ust_duzey_uyarilari:
+        print("\nÜst düzey README'lerdeki durum ifadeleri:")
+        for u in ust_duzey_uyarilari:
+            print(f"  ⚠ {u}")
 
 
 if __name__ == "__main__":
