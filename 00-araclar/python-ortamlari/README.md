@@ -26,7 +26,7 @@ Birden fazla proje arasında geçiş yapan, bağımlılıklarını yöneten biri
 
 ## 02 — İleri `ileri`
 
-- [ ] [01 — Modern paket yöneticileri (uv, poetry)](02-ileri/01-modern-paket-yoneticileri.md)
+- [x] [01 — Modern paket yöneticileri (uv, poetry)](02-ileri/01-modern-paket-yoneticileri.md)
 
 > `[x]` hazır, `[ ]` sırada.
 

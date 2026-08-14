@@ -14,7 +14,7 @@ Her sayfa **tek bir soruya cevap verir**, seviyesi ve ön koşulu bellidir.
 
 | # | Konu | Kapsam | Durum |
 |---|---|---|---|
-| 00 | [Araçlar](00-araclar/) | Git & GitHub, terminal, sanal ortamlar, Colab | 🟡 Terminal tamamlandı, Git/GitHub yazılıyor |
+| 00 | [Araçlar](00-araclar/) | Git & GitHub, terminal, sanal ortamlar, Colab | 🟡 Terminal ve Python Ortamları tamamlandı, Git/GitHub yazılıyor |
 | 01 | [Python](01-python/) | Temel sözdiziminden veri işlemeye | ⚪ Planlandı |
 | 02 | [Makine Öğrenmesi](02-makine-ogrenmesi/) | Kavramlar, model kurma, değerlendirme | ⚪ Planlandı |
 | 03 | [Derin Öğrenme](03-derin-ogrenme/) | Sinir ağları, eğitim, mimariler | ⚪ Planlandı |
