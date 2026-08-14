@@ -7,7 +7,7 @@ Python da öğrensen derin öğrenme de çalışsan, bir noktada buradaki araçl
 |---|---|---|
 | [Terminal](terminal/) | Dosya gezinme, yol kavramı, temel komutlar | 🟢 Tamamlandı |
 | [Python Ortamları](python-ortamlari/) | Kurulum, sanal ortam, bağımlılık | 🟢 Tamamlandı |
-| [VS Code](vscode/) | Editörü verimli kullanmak | 🟡 3/5 yazıldı |
+| [VS Code](vscode/) | Editörü verimli kullanmak | 🟡 4/5 yazıldı |
 | [Git & GitHub](git-github/) | Sürüm kontrolü, işbirliği, portföy | 🟡 Temeller hazır |
 | [Notebook ve Colab](notebook-ve-colab/) | Jupyter, Colab, GPU | ⚪ Planlandı |
 | [Yapay Zekâ Asistanları](yapay-zeka-asistanlari/) | LLM ve ajanları doğru kullanma | ⚪ Planlandı |

@@ -17,7 +17,7 @@ Hiç VS Code kurmamış biri için. Sırayla okunmalı.
 
 ## 01 — Günlük kullanım `orta`
 
-- [ ] [01 — Notebook'ları VS Code'da çalıştırmak](01-gunluk-kullanim/01-notebook-calistirmak.md)
+- [x] [01 — Notebook'ları VS Code'da çalıştırmak](01-gunluk-kullanim/01-notebook-calistirmak.md)
 - [ ] [02 — Faydalı eklentiler ve kısayollar](01-gunluk-kullanim/02-eklentiler-ve-kisayollar.md)
 
 > `[x]` hazır, `[ ]` sırada.
