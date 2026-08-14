@@ -20,7 +20,7 @@ Hiç Python kurmamış biri için. Sırayla okunmalı.
 
 Birden fazla proje arasında geçiş yapan, bağımlılıklarını yöneten biri için.
 
-- [ ] [01 — conda / Miniconda ne zaman tercih edilir](01-gunluk-kullanim/01-conda-ne-zaman.md)
+- [x] [01 — conda / Miniconda ne zaman tercih edilir](01-gunluk-kullanim/01-conda-ne-zaman.md)
 - [ ] [02 — requirements.txt ve bağımlılık dondurma](01-gunluk-kullanim/02-requirements-ve-bagimliliklar.md)
 - [ ] [03 — Ortam sorunlarını çözmek](01-gunluk-kullanim/03-ortam-sorunlarini-cozmek.md)
 

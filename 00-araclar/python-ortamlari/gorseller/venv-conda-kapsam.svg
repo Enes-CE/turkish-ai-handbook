@@ -1,0 +1,51 @@
+<svg width="100%" viewBox="0 0 680 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="baslik aciklama">
+<title id="baslik">venv ve conda'nın yönettiği katmanlar</title>
+<desc id="aciklama">venv yalnızca Python paketlerini yönetirken, conda'nın Python'un kendisini ve CUDA gibi Python dışı ikili bağımlılıkları da yönettiğini gösteren katman şeması.</desc>
+<style>
+  .baslik { font: 500 15px system-ui, sans-serif; fill: #24292f; }
+  .etiket { font: 500 13px system-ui, sans-serif; fill: #24292f; }
+  .kucuk  { font: 400 12px system-ui, sans-serif; fill: #57606a; }
+  .kap    { fill: none; stroke: #d0d7de; stroke-width: 1.5; stroke-dasharray: 5 4; }
+  .kutu   { fill: #ffffff; stroke: #d0d7de; stroke-width: 1; }
+  .disk   { fill: #f6f8fa; stroke: #d0d7de; stroke-width: 1; }
+  @media (prefers-color-scheme: dark) {
+    .baslik, .etiket { fill: #e6edf3; }
+    .kucuk { fill: #9198a1; }
+    .kap { stroke: #30363d; }
+    .kutu { fill: #0d1117; stroke: #30363d; }
+    .disk { fill: #161b22; stroke: #30363d; }
+  }
+</style>
+
+<text x="20" y="24" class="baslik">venv</text>
+<text x="20" y="44" class="kucuk">Yalnızca Python paketlerini yönetir</text>
+
+<rect x="20" y="58" width="300" height="52" rx="6" class="kap"/>
+<rect x="34" y="70" width="272" height="28" rx="4" class="kutu"/>
+<text x="170" y="89" text-anchor="middle" class="etiket">Python paketleri (pip)</text>
+
+<rect x="34" y="126" width="272" height="28" rx="4" class="disk"/>
+<text x="170" y="145" text-anchor="middle" class="kucuk">Python'un kendisi — dışarıda, sistemden gelir</text>
+
+<rect x="34" y="166" width="272" height="28" rx="4" class="disk"/>
+<text x="170" y="185" text-anchor="middle" class="kucuk">CUDA, C kütüphaneleri — kapsam dışı</text>
+
+<text x="380" y="24" class="baslik">conda</text>
+<text x="380" y="44" class="kucuk">Üç katmanı birden yönetir</text>
+
+<rect x="380" y="58" width="280" height="148" rx="6" class="kap"/>
+
+<rect x="394" y="70" width="252" height="28" rx="4" class="kutu"/>
+<text x="520" y="89" text-anchor="middle" class="etiket">Python paketleri</text>
+
+<rect x="394" y="108" width="252" height="28" rx="4" class="kutu"/>
+<text x="520" y="127" text-anchor="middle" class="etiket">Python'un kendisi</text>
+
+<rect x="394" y="146" width="252" height="42" rx="4" class="kutu"/>
+<text x="520" y="164" text-anchor="middle" class="etiket">Python dışı ikili bağımlılıklar</text>
+<text x="520" y="181" text-anchor="middle" class="kucuk">CUDA, cuDNN, C kütüphaneleri</text>
+
+<text x="20" y="248" class="kucuk">Kesikli çerçeve, aracın yönettiği alanı gösterir.</text>
+<text x="20" y="268" class="kucuk">CUDA gibi araçlar pip ile kurulamadığı için derin öğrenme kurulumlarında conda öne çıkar.</text>
+<text x="20" y="288" class="kucuk">İhtiyacın olan her şey pip ile kurulabiliyorsa venv yeterlidir.</text>
+</svg>
