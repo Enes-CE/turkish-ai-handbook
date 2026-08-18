@@ -51,6 +51,8 @@ listesini gösterir —
 [Değişiklikleri takip etmek](../../git-github/00-temeller/04-degisiklikleri-takip-etmek.md)
 sayfasında `git status` ile terminalde gördüğün şeyin görsel hâli.
 
+![Kaynak Denetimi paneli: değişen ve stage'lenmiş dosyaların listesi, commit mesaj kutusu, sağda çalışma kopyası ile hazırlık alanını karşılaştıran yan yana diff görünümü, altta aynı durumu gösteren git status çıktısı](../gorseller/vscode-kaynak-denetimi-2026-08.png)
+
 ### Panel işlemleri ↔ Git komutları
 
 | Panelde | Terminalde |

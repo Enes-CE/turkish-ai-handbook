@@ -52,6 +52,8 @@ Seçtikten sonra, durum çubuğunda ([önceki sayfada](01-kurulum-ve-arayuz.md)
 gördüğün en alttaki şeritte) seçili yorumlayıcının adı görünür — kontrol etmenin
 en hızlı yolu budur.
 
+![Python: Select Interpreter listesi; venv önerilen olarak işaretli, altında sistem Python kurulumları ve conda ortamları (ml-env, data-science, nlp) sıralanıyor](../gorseller/vscode-yorumlayici-secimi-2026-08.png)
+
 ## Terminal ve editör ayrı Python'lar kullanabilir
 
 > ⚠️ **Bu sayfanın en kritik konusu.** Terminalde bir sanal ortamı

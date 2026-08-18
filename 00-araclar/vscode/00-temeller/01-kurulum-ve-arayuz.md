@@ -8,7 +8,7 @@ dogrulandigi-surum: VS Code — arayüz hızlı değişebilir, bkz. BAKIM.md § 
 
 # Kurulum ve arayüz
 
-> **Bu sayfa şunu çözer:** VS Code'u kurar, arayüzün beş ana bölgesini ve komut
+> **Bu sayfa şunu çözer:** VS Code'u kurar, arayüzün altı ana bölgesini ve komut
 > paletini tanırsın — bundan sonraki her sayfa buradan devam eder.
 > **Ön koşul:** yok · **Süre:** ~15 dakika
 
@@ -45,21 +45,26 @@ code.visualstudio.com adresinden işletim sistemine uygun sürümü indir.
 - **Linux:** Dağıtımına uygun paket (`.deb`, `.rpm`) ya da paket yöneticisi
   üzerinden kur.
 
-## Arayüzün beş ana bölgesi
+## Arayüzün altı ana bölgesi
 
 ```
-┌────────┬─────────────┬───────────────────┐
-│ Kenar  │ Yan panel   │ Editör alanı      │
-│ çubuğu │ (dosyalar,  │                   │
-│        │ arama, Git, │ (açtığın dosyalar │
-│        │ ...)        │ burada görünür)   │
-├────────┴─────────────┴───────────────────┤
-│    Panel (terminal, sorunlar, çıktı)     │
-├──────────────────────────────────────────┤
-│               Durum çubuğu               │
-└──────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────┐
+│ 1. Üst Çubuk (menü, komut paleti, çalışma alanı)    │
+├─────────────────────────────────────────────────────┤
+┌─────────────┬────────────────┬──────────────────────┐
+│ 2. Etkinlik │ 3. Yan Çubuk   │ 4. Düzenleyici       │
+│    Çubuğu   │    (dosyalar,  │                      │
+│             │    arama, Git, │    (açtığın dosyalar │
+│             │    ...)        │    burada görünür)   │
+├─────────────┴────────────────┴──────────────────────┤
+│ 5. Panel (terminal, sorunlar, çıktı)                │
+├─────────────────────────────────────────────────────┤
+│ 6. Durum Çubuğu                                     │
+└─────────────────────────────────────────────────────┘
 ```
 
+- **Üst çubuk** — en üstteki şerit. Menüler, komut paleti kutusu, çalışma
+  alanının adı ve pencere kontrolleri burada durur.
 - **Kenar çubuğu (activity bar)** — en soldaki dar şerit. Yan panelde ne
   göründüğünü seçer: dosyalar, arama, Git, eklentiler.
 - **Yan panel** — kenar çubuğunda seçtiğin şeyin detayı. Genelde dosya ağacı
@@ -68,6 +73,8 @@ code.visualstudio.com adresinden işletim sistemine uygun sürümü indir.
 - **Panel** — alttaki bölge; terminal, sorunlar listesi, çıktı sekmeleri burada.
 - **Durum çubuğu** — en alttaki ince şerit; aktif Python yorumlayıcısı,
   satır/sütun numarası gibi bilgiler burada görünür.
+
+![VS Code arayüzünün altı bölgesi numaralandırılmış hâlde: üst çubuk, kenar çubuğu, yan panel, editör alanı, panel ve durum çubuğu](../gorseller/vscode-arayuz-2026-08.png)
 
 ## Komut paleti: sayfanın merkezi
 

@@ -53,6 +53,8 @@ Bu yüzden bir notebook hücresinde `ModuleNotFoundError` alıp "ama ben bu pake
 kurdum" diye şaşırabilirsin — muhtemelen kurduğun yer ile çekirdeğin baktığı yer
 farklı. Çözüm: sağ üstteki çekirdek seçiciye tıkla, aynı `venv/`'i seç.
 
+![Select Kernel listesi: .venv önerilen olarak işaretli ve yolunu gösteriyor, altında conda ortamları (base, data-science, ml-env, nlp) ve diğer Python kurulumları sıralanıyor](../gorseller/vscode-cekirdek-secimi-2026-08.png)
+
 ## Sanal ortamın çekirdek olarak görünmesi
 
 venv'in çekirdek listesinde çıkması için o ortamda `ipykernel` paketinin kurulu
