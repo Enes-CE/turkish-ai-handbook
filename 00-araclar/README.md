@@ -9,7 +9,7 @@ Python da öğrensen derin öğrenme de çalışsan, bir noktada buradaki araçl
 | [Python Ortamları](python-ortamlari/) | Kurulum, sanal ortam, bağımlılık | 🟢 Tamamlandı |
 | [VS Code](vscode/) | Editörü verimli kullanmak | 🟢 Tamamlandı |
 | [Git & GitHub](git-github/) | Sürüm kontrolü, işbirliği, portföy | 🟡 Temeller hazır |
-| [Notebook ve Colab](notebook-ve-colab/) | Jupyter, Colab, GPU | ⚪ Planlandı |
+| [Notebook ve Colab](notebook-ve-colab/) | Jupyter, Colab, GPU | 🟡 1/6 yazıldı |
 | [Yapay Zekâ Asistanları](yapay-zeka-asistanlari/) | LLM ve ajanları doğru kullanma | ⚪ Planlandı |
 | [Platformlar](platformlar/) | GPU, Kaggle, Hugging Face | ⚪ Planlandı |
 

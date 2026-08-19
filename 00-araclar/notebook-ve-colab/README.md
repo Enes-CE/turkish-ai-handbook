@@ -11,7 +11,7 @@ oturum sınırlarına, oradan günlük kullanıma uzanan bölüm.
 
 Hiç notebook açmamış biri için. Sırayla okunmalı.
 
-- [ ] [01 — Jupyter nedir, hücre mantığı](00-temeller/01-jupyter-nedir.md)
+- [x] [01 — Jupyter nedir, hücre mantığı](00-temeller/01-jupyter-nedir.md)
 - [ ] [02 — Notebook'ta iyi pratikler](00-temeller/02-notebook-iyi-pratikler.md)
 - [ ] [03 — Google Colab: arayüz ve oturum sınırları](00-temeller/03-colab-arayuz-ve-sinirlar.md)
 
